@@ -13,6 +13,7 @@
 		D3825CEA1CA5A78A00E01BB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3825CE91CA5A78A00E01BB1 /* Assets.xcassets */; };
 		D3825CED1CA5A78A00E01BB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3825CEB1CA5A78A00E01BB1 /* LaunchScreen.storyboard */; };
 		D3825CF51CA5B65600E01BB1 /* DraggableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3825CF41CA5B65600E01BB1 /* DraggableImage.swift */; };
+		D3825CF71CA5BB1400E01BB1 /* PetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3825CF61CA5BB1400E01BB1 /* PetImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D3825CEC1CA5A78A00E01BB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3825CEE1CA5A78A00E01BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3825CF41CA5B65600E01BB1 /* DraggableImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImage.swift; sourceTree = "<group>"; };
+		D3825CF61CA5BB1400E01BB1 /* PetImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D3825CE21CA5A78A00E01BB1 /* AppDelegate.swift */,
 				D3825CE41CA5A78A00E01BB1 /* ViewController.swift */,
 				D3825CF41CA5B65600E01BB1 /* DraggableImage.swift */,
+				D3825CF61CA5BB1400E01BB1 /* PetImage.swift */,
 				D3825CE61CA5A78A00E01BB1 /* Main.storyboard */,
 				D3825CE91CA5A78A00E01BB1 /* Assets.xcassets */,
 				D3825CEB1CA5A78A00E01BB1 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3825CE51CA5A78A00E01BB1 /* ViewController.swift in Sources */,
+				D3825CF71CA5BB1400E01BB1 /* PetImage.swift in Sources */,
 				D3825CF51CA5B65600E01BB1 /* DraggableImage.swift in Sources */,
 				D3825CE31CA5A78A00E01BB1 /* AppDelegate.swift in Sources */,
 			);
