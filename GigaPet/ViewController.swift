@@ -5,6 +5,13 @@
 //  Created by William L. Marr III on 3/25/16.
 //  Copyright © 2016 William L. Marr III. All rights reserved.
 //
+//
+// Credit/attribution for the audio file named whip_crack.wave:
+//
+//      Link: http://freesound.org/people/CGEffex/sounds/93100/
+//      Author: CGEffex
+//      License: CC (Creative Commons) http://creativecommons.org/licenses/by/3.0/legalcode
+//
 
 import UIKit
 import AVFoundation
