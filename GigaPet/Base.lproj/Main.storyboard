@@ -46,15 +46,62 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miner_idle_1" translatesAutoresizingMaskIntoConstraints="NO" id="6ZP-FY-6ZC">
+                                <rect key="frame" x="37" y="244" width="303" height="295"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="295" id="BKF-Fd-0SL">
+                                        <variation key="heightClass=compact" constant="120"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="189" id="Iab-wj-MF4"/>
+                                    <constraint firstAttribute="width" constant="303" id="ck6-mg-G5F"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="192" id="wpw-Gl-Chv"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Iab-wj-MF4"/>
+                                        <exclude reference="wpw-Gl-Chv"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="-31" y="416" width="303" height="119"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="142" width="189" height="192"/>
+                                    <mask key="constraints">
+                                        <include reference="Iab-wj-MF4"/>
+                                        <include reference="wpw-Gl-Chv"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rat_idle_1" translatesAutoresizingMaskIntoConstraints="NO" id="de7-fi-iLq">
+                                <rect key="frame" x="296" y="406" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="4iV-A3-pm9">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="70"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="240" id="DcU-vM-nRl"/>
+                                </constraints>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="151" y="446" width="240" height="81"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="177" y="249" width="147" height="80"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kPk-iq-omw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Td-Ma-xuz"/>
+                            <constraint firstItem="6ZP-FY-6ZC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="AOW-eQ-LfX"/>
                             <constraint firstItem="aQB-aa-dcl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AXE-EA-kG7"/>
                             <constraint firstItem="aQB-aa-dcl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Dm5-H4-UMz"/>
                             <constraint firstItem="HYr-b5-rQ0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FGn-h0-E5h"/>
                             <constraint firstAttribute="trailing" secondItem="aQB-aa-dcl" secondAttribute="trailing" id="K8T-Ot-prx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aQB-aa-dcl" secondAttribute="bottom" id="KWY-7Y-roR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="de7-fi-iLq" secondAttribute="bottom" constant="66" id="NLe-rV-QF8">
+                                <variation key="heightClass=regular-widthClass=compact" constant="72"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="HYr-b5-rQ0" secondAttribute="trailing" id="QDg-lV-ovq"/>
                             <constraint firstItem="aQB-aa-dcl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="R85-C0-W3v"/>
                             <constraint firstItem="aQB-aa-dcl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UUv-VN-Jgf"/>
@@ -64,27 +111,49 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                             </constraint>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aQB-aa-dcl" secondAttribute="bottom" id="ah0-x9-8nn"/>
+                            <constraint firstItem="6ZP-FY-6ZC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="37" id="bEN-vU-kbp">
+                                <variation key="heightClass=compact" constant="-30"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-60"/>
+                            </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="aQB-aa-dcl" secondAttribute="trailing" constant="-20" id="gOa-gZ-QOn"/>
+                            <constraint firstAttribute="trailing" secondItem="de7-fi-iLq" secondAttribute="trailing" constant="64" id="pck-bE-KHc">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
+                            </constraint>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HYr-b5-rQ0" secondAttribute="bottom" id="tV7-5s-3lI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6ZP-FY-6ZC" secondAttribute="bottom" constant="66" id="uto-r7-z4m"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6ZP-FY-6ZC" secondAttribute="bottom" constant="61" id="zMR-wa-JWf">
+                                <variation key="heightClass=compact" constant="70"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="67"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="Dm5-H4-UMz"/>
                                 <exclude reference="R85-C0-W3v"/>
                                 <exclude reference="gOa-gZ-QOn"/>
+                                <exclude reference="AOW-eQ-LfX"/>
                                 <exclude reference="KWY-7Y-roR"/>
+                                <exclude reference="uto-r7-z4m"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="AOW-eQ-LfX"/>
+                                <include reference="uto-r7-z4m"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="220" y="516"/>
+            <point key="canvasLocation" x="993" y="537"/>
         </scene>
     </scenes>
     <resources>
         <image name="bg" width="768" height="1024"/>
         <image name="gigapet_green_lcd" width="232" height="99"/>
         <image name="ground" width="1444" height="151"/>
+        <image name="miner_idle_1" width="271" height="271"/>
+        <image name="rat_idle_1" width="325" height="159"/>
     </resources>
 </document>
