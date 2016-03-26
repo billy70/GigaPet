@@ -174,10 +174,10 @@
             </objects>
             <point key="canvasLocation" x="459" y="532"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="DO0-0R-fBb">
             <objects>
-                <viewController id="bxp-w9-N14" customClass="ViewController" customModule="GigaPet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bxp-w9-N14" customClass="GameViewController" customModule="GigaPet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pao-Uv-FFT"/>
                         <viewControllerLayoutGuide type="bottom" id="eVT-oK-jFq"/>
