@@ -201,8 +201,23 @@
                                     <constraint firstAttribute="height" constant="75" id="kb2-3I-Uoe"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" tag="200" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rat_idle_1" translatesAutoresizingMaskIntoConstraints="NO" id="rUS-6k-vwK">
+                                <rect key="frame" x="160" y="406" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Kfn-hY-5Qm"/>
+                                    <constraint firstAttribute="height" constant="128" id="al1-RI-lyE">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="70"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="151" y="446" width="240" height="81"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="177" y="249" width="147" height="80"/>
+                                </variation>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miner_idle_1" translatesAutoresizingMaskIntoConstraints="NO" id="mxp-Ge-f3C">
-                                <rect key="frame" x="188.5" y="244" width="303" height="295"/>
+                                <rect key="frame" x="188" y="244" width="303" height="295"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="189" id="5A4-jg-eaO"/>
                                     <constraint firstAttribute="width" constant="303" id="G6r-YF-B7h"/>
@@ -227,21 +242,6 @@
                                         <include reference="5A4-jg-eaO"/>
                                         <include reference="M9C-zi-Ofd"/>
                                     </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" tag="200" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rat_idle_1" translatesAutoresizingMaskIntoConstraints="NO" id="rUS-6k-vwK">
-                                <rect key="frame" x="160" y="406" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="Kfn-hY-5Qm"/>
-                                    <constraint firstAttribute="height" constant="128" id="al1-RI-lyE">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="70"/>
-                                    </constraint>
-                                </constraints>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="151" y="446" width="240" height="81"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="177" y="249" width="147" height="80"/>
                                 </variation>
                             </imageView>
                         </subviews>
@@ -270,7 +270,9 @@
                             <constraint firstItem="c9n-91-tSf" firstAttribute="leading" secondItem="BmE-ey-ffG" secondAttribute="leading" id="cfT-YR-nGe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="N82-FS-iis" secondAttribute="trailing" constant="-20" id="hOO-PD-sjI"/>
                             <constraint firstItem="rUS-6k-vwK" firstAttribute="centerX" secondItem="BmE-ey-ffG" secondAttribute="centerX" constant="-20" id="s10-Uz-xXY"/>
-                            <constraint firstItem="mxp-Ge-f3C" firstAttribute="centerX" secondItem="BmE-ey-ffG" secondAttribute="centerX" constant="40" id="uJ2-ga-BIX"/>
+                            <constraint firstItem="mxp-Ge-f3C" firstAttribute="centerX" secondItem="BmE-ey-ffG" secondAttribute="centerX" constant="40" id="uJ2-ga-BIX">
+                                <variation key="heightClass=regular-widthClass=compact" constant="19"/>
+                            </constraint>
                             <constraint firstItem="N82-FS-iis" firstAttribute="leading" secondItem="BmE-ey-ffG" secondAttribute="leadingMargin" constant="-20" id="yZ3-W6-OQ6"/>
                             <constraint firstItem="eVT-oK-jFq" firstAttribute="top" secondItem="rUS-6k-vwK" secondAttribute="bottom" constant="66" id="zB2-6O-DnI">
                                 <variation key="heightClass=regular-widthClass=compact" constant="72"/>
@@ -310,6 +312,6 @@
         <image name="rat_idle_1" width="325" height="159"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iu0-n5-ISD"/>
+        <segue reference="coo-cz-z93"/>
     </inferredMetricsTieBreakers>
 </document>
