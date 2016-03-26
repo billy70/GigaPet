@@ -248,6 +248,41 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="livespanel" translatesAutoresizingMaskIntoConstraints="NO" id="irR-gI-lDb">
+                                <rect key="frame" x="66" y="40" width="468" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="8dL-59-FNA">
+                                        <variation key="heightClass=compact" constant="80"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="468" id="BT8-u5-bCy">
+                                        <variation key="heightClass=compact" constant="300"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="330" id="jMN-A9-wAE">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="310"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="96" id="piu-aE-5cE"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8dL-59-FNA"/>
+                                        <exclude reference="BT8-u5-bCy"/>
+                                        <exclude reference="jMN-A9-wAE"/>
+                                        <exclude reference="piu-aE-5cE"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="8dL-59-FNA"/>
+                                        <include reference="BT8-u5-bCy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="jMN-A9-wAE"/>
+                                        <include reference="piu-aE-5cE"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -273,6 +308,10 @@
                             <constraint firstItem="eVT-oK-jFq" firstAttribute="top" secondItem="N82-FS-iis" secondAttribute="bottom" id="ZTZ-gf-ACC"/>
                             <constraint firstItem="c9n-91-tSf" firstAttribute="leading" secondItem="BmE-ey-ffG" secondAttribute="leading" id="cfT-YR-nGe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="N82-FS-iis" secondAttribute="trailing" constant="-20" id="hOO-PD-sjI"/>
+                            <constraint firstItem="irR-gI-lDb" firstAttribute="top" secondItem="pao-Uv-FFT" secondAttribute="bottom" constant="20" id="iom-5z-tse"/>
+                            <constraint firstItem="irR-gI-lDb" firstAttribute="centerX" secondItem="BmE-ey-ffG" secondAttribute="centerX" id="mJD-bl-at3">
+                                <variation key="heightClass=regular-widthClass=compact" constant="2"/>
+                            </constraint>
                             <constraint firstItem="rUS-6k-vwK" firstAttribute="centerX" secondItem="BmE-ey-ffG" secondAttribute="centerX" constant="-20" id="s10-Uz-xXY"/>
                             <constraint firstItem="mxp-Ge-f3C" firstAttribute="centerX" secondItem="BmE-ey-ffG" secondAttribute="centerX" constant="40" id="uJ2-ga-BIX">
                                 <variation key="heightClass=regular-widthClass=compact" constant="19"/>
@@ -316,6 +355,7 @@
         <image name="bg" width="768" height="1024"/>
         <image name="gigapet_green_lcd" width="232" height="99"/>
         <image name="ground" width="1444" height="151"/>
+        <image name="livespanel" width="468" height="137"/>
         <image name="miner_idle_1" width="271" height="271"/>
         <image name="rat_idle_1" width="325" height="159"/>
     </resources>
