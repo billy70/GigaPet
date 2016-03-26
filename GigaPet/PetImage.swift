@@ -16,21 +16,30 @@ class PetImage: UIImageView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
-        playIdleAnimation()
     }
     
-    func playIdleAnimation() {
+    func playIdleAnimation(forSelectedPet pet: String) {
+        
+        var petNamePrefix = ""
+        
+        if pet == "miner" {
+            petNamePrefix = "miner"
+        } else {
+            petNamePrefix = "rat"
+        }
+        
+        petNamePrefix += "_idle_"
+        
         
         // Set a default image when the animation is stopped,
         // and reset the animation images array for the next animation loop.
-        self.image = UIImage(named: "idle_1.png")
+        self.image = UIImage(named: "\(petNamePrefix)1.png")
         self.animationImages = nil
         
         var imgArray = [UIImage]()
         
         for x in 1...4 {
-            let img = UIImage(named: "idle_\(x).png")
+            let img = UIImage(named: "\(petNamePrefix)\(x).png")
             
             imgArray.append(img!)
         }
@@ -41,7 +50,7 @@ class PetImage: UIImageView {
         self.startAnimating()
     }
     
-    func playDeathAnimation() {
+    func playDeathAnimation(forSelectedPet pet: String) {
         
         // Set a default image when the animation is stopped,
         // and reset the animation images array for the next animation loop.
