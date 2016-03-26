@@ -19,7 +19,7 @@
 		D3825CFF1CA60EFC00E01BB1 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = D3825CFB1CA60EFC00E01BB1 /* death.wav */; };
 		D3825D001CA60EFC00E01BB1 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = D3825CFC1CA60EFC00E01BB1 /* heart.wav */; };
 		D3825D011CA60EFC00E01BB1 /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = D3825CFD1CA60EFC00E01BB1 /* skull.wav */; };
-		D3825D041CA6119400E01BB1 /* whip_crack.wav in Resources */ = {isa = PBXBuildFile; fileRef = D3825D031CA6119400E01BB1 /* whip_crack.wav */; };
+		D3825D041CA6119400E01BB1 /* whip.wav in Resources */ = {isa = PBXBuildFile; fileRef = D3825D031CA6119400E01BB1 /* whip.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 		D3825CFB1CA60EFC00E01BB1 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
 		D3825CFC1CA60EFC00E01BB1 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
 		D3825CFD1CA60EFC00E01BB1 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
-		D3825D031CA6119400E01BB1 /* whip_crack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whip_crack.wav; sourceTree = "<group>"; };
+		D3825D031CA6119400E01BB1 /* whip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whip.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				D3825CF81CA60ED000E01BB1 /* cave-music.mp3 */,
-				D3825D031CA6119400E01BB1 /* whip_crack.wav */,
+				D3825D031CA6119400E01BB1 /* whip.wav */,
 				D3825CFA1CA60EFC00E01BB1 /* bite.wav */,
 				D3825CFB1CA60EFC00E01BB1 /* death.wav */,
 				D3825CFC1CA60EFC00E01BB1 /* heart.wav */,
@@ -159,7 +159,7 @@
 				D3825D011CA60EFC00E01BB1 /* skull.wav in Resources */,
 				D3825CFE1CA60EFC00E01BB1 /* bite.wav in Resources */,
 				D3825CFF1CA60EFC00E01BB1 /* death.wav in Resources */,
-				D3825D041CA6119400E01BB1 /* whip_crack.wav in Resources */,
+				D3825D041CA6119400E01BB1 /* whip.wav in Resources */,
 				D3825D001CA60EFC00E01BB1 /* heart.wav in Resources */,
 				D3825CED1CA5A78A00E01BB1 /* LaunchScreen.storyboard in Resources */,
 				D3825CF91CA60ED000E01BB1 /* cave-music.mp3 in Resources */,
