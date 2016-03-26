@@ -37,6 +37,9 @@ class ViewController: UIViewController {
         } catch let err as NSError {
             print(err.debugDescription)
         }
+        
+        minerImage.playIdleAnimation(forSelectedPet: "miner")
+        ratImage.playIdleAnimation(forSelectedPet: "rat")
     }
 
     override func didReceiveMemoryWarning() {

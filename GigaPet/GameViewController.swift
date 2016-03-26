@@ -44,6 +44,8 @@ class GameViewController: UIViewController {
         
         if petSelected == "miner" {
             
+            minerImage.playIdleAnimation(forSelectedPet: petSelected)
+            
             // Remove the rat image.
             if let viewWithTag = self.view.viewWithTag(200) {
                 viewWithTag.removeFromSuperview()
@@ -51,6 +53,8 @@ class GameViewController: UIViewController {
         }
         
         if petSelected == "rat" {
+            
+            ratImage.playIdleAnimation(forSelectedPet: petSelected)
             
             // Remove the miner image.
             if let viewWithTag = self.view.viewWithTag(100) {
