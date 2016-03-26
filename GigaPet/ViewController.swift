@@ -40,7 +40,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "selectMiner" {
+            let gvc = segue.destinationViewController as! GameViewController
+            gvc.petSelected = "miner"
+        } else if segue.identifier == "selectRat" {
+            let gvc = segue.destinationViewController as! GameViewController
+            gvc.petSelected = "rat"
+        }
+    }
 
 }
 

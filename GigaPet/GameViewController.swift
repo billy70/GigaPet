@@ -16,6 +16,7 @@ class GameViewController: UIViewController {
     var sfxWhip: AVAudioPlayer!
     var sfxDeath: AVAudioPlayer!
     var sfxSkull: AVAudioPlayer!
+    var petSelected = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,22 @@ class GameViewController: UIViewController {
 
         } catch let err as NSError {
             print(err.debugDescription)
+        }
+        
+        if petSelected == "miner" {
+            
+            // Remove the rat image.
+            if let viewWithTag = self.view.viewWithTag(200) {
+                viewWithTag.removeFromSuperview()
+            }
+        }
+        
+        if petSelected == "rat" {
+            
+            // Remove the miner image.
+            if let viewWithTag = self.view.viewWithTag(100) {
+                viewWithTag.removeFromSuperview()
+            }
         }
     
     }
