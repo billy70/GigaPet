@@ -11,6 +11,9 @@ import AVFoundation
 
 class GameViewController: UIViewController {
 
+    @IBOutlet weak var minerImage: PetImage!
+    @IBOutlet weak var ratImage: PetImage!
+    
     var sfxBite: AVAudioPlayer!
     var sfxHeart: AVAudioPlayer!
     var sfxWhip: AVAudioPlayer!

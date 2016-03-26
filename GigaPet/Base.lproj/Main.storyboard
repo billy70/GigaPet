@@ -175,6 +175,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="minerImage" destination="6ZP-FY-6ZC" id="aN6-GV-Mbi"/>
+                        <outlet property="ratImage" destination="de7-fi-iLq" id="HhR-j6-9QP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -298,6 +302,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="minerImage" destination="mxp-Ge-f3C" id="dFq-iC-UVJ"/>
+                        <outlet property="ratImage" destination="rUS-6k-vwK" id="6xl-iE-Gp9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kAG-fA-bfk" sceneMemberID="firstResponder"/>
             </objects>

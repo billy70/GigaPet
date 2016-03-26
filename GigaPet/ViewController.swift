@@ -18,6 +18,9 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var minerImage: PetImage!
+    @IBOutlet weak var ratImage: PetImage!
+    
     var musicPlayer: AVAudioPlayer!
     
     override func viewDidLoad() {
