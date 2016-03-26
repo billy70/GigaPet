@@ -97,7 +97,7 @@
                                     <color key="titleColor" red="0.97308104240000004" green="0.97045735580000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bxp-w9-N14" kind="presentation" identifier="selectMiner" id="iu0-n5-ISD"/>
+                                    <segue destination="bxp-w9-N14" kind="show" identifier="selectMiner" id="iu0-n5-ISD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmU-im-rcQ">
@@ -108,7 +108,7 @@
                                     <color key="titleColor" red="0.97308104240000004" green="0.97045735580000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bxp-w9-N14" kind="presentation" identifier="selectRat" id="coo-cz-z93"/>
+                                    <segue destination="bxp-w9-N14" kind="show" identifier="selectRat" id="coo-cz-z93"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -310,6 +310,6 @@
         <image name="rat_idle_1" width="325" height="159"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iu0-n5-ISD"/>
+        <segue reference="coo-cz-z93"/>
     </inferredMetricsTieBreakers>
 </document>
