@@ -22,6 +22,8 @@ class GameViewController: UIViewController {
     @IBOutlet weak var penalty2Image: UIImageView!
     @IBOutlet weak var penalty3Image: UIImageView!
     
+    let DIM_ALPHA: CGFloat = 0.2
+    let OPAQUE: CGFloat = 1.0
     
     var sfxBite: AVAudioPlayer!
     var sfxHeart: AVAudioPlayer!
@@ -71,6 +73,9 @@ class GameViewController: UIViewController {
             }
         }
     
+        penalty1Image.alpha = DIM_ALPHA
+        penalty2Image.alpha = DIM_ALPHA
+        penalty3Image.alpha = DIM_ALPHA
     }
 
     override func didReceiveMemoryWarning() {
