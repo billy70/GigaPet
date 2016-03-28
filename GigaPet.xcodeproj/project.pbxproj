@@ -21,6 +21,7 @@
 		D3825D011CA60EFC00E01BB1 /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = D3825CFD1CA60EFC00E01BB1 /* skull.wav */; };
 		D3825D041CA6119400E01BB1 /* whip.wav in Resources */ = {isa = PBXBuildFile; fileRef = D3825D031CA6119400E01BB1 /* whip.wav */; };
 		D3825D061CA6193300E01BB1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3825D051CA6193300E01BB1 /* GameViewController.swift */; };
+		D3B9D5761CA9A6FA0094ED50 /* rat_death.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3B9D5751CA9A6FA0094ED50 /* rat_death.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D3825CFD1CA60EFC00E01BB1 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
 		D3825D031CA6119400E01BB1 /* whip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whip.wav; sourceTree = "<group>"; };
 		D3825D051CA6193300E01BB1 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D3B9D5751CA9A6FA0094ED50 /* rat_death.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rat_death.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		D3825D021CA60F0800E01BB1 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				D3B9D5751CA9A6FA0094ED50 /* rat_death.mp3 */,
 				D3825CF81CA60ED000E01BB1 /* cave-music.mp3 */,
 				D3825D031CA6119400E01BB1 /* whip.wav */,
 				D3825CFA1CA60EFC00E01BB1 /* bite.wav */,
@@ -162,6 +165,7 @@
 				D3825D011CA60EFC00E01BB1 /* skull.wav in Resources */,
 				D3825CFE1CA60EFC00E01BB1 /* bite.wav in Resources */,
 				D3825CFF1CA60EFC00E01BB1 /* death.wav in Resources */,
+				D3B9D5761CA9A6FA0094ED50 /* rat_death.mp3 in Resources */,
 				D3825D041CA6119400E01BB1 /* whip.wav in Resources */,
 				D3825D001CA60EFC00E01BB1 /* heart.wav in Resources */,
 				D3825CED1CA5A78A00E01BB1 /* LaunchScreen.storyboard in Resources */,
@@ -332,6 +336,7 @@
 				D3825CF31CA5A78A00E01BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
