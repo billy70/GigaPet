@@ -36,7 +36,7 @@ class GameViewController: UIViewController {
     var sfxMinerDeath: AVAudioPlayer!
     var sfxRatDeath: AVAudioPlayer!
     var sfxSkull: AVAudioPlayer!
-    var petSelected = ""
+    var petSelected: PetType = .Miner
     var petSelectedImage: PetImage!
     
     var penalties = 0
@@ -68,7 +68,7 @@ class GameViewController: UIViewController {
             print(err.debugDescription)
         }
         
-        if petSelected == "miner" {
+        if petSelected == .Miner {
             
             petSelectedImage = minerImage
             
@@ -78,7 +78,7 @@ class GameViewController: UIViewController {
             }
         }
         
-        if petSelected == "rat" {
+        if petSelected == .Rat {
             
             petSelectedImage = ratImage
             
@@ -88,7 +88,7 @@ class GameViewController: UIViewController {
             }
         }
         
-        petSelectedImage.playIdleAnimation(forSelectedPet: petSelected)
+        petSelectedImage.playIdleAnimation(petSelected)
         heartImage.dropTarget = petSelectedImage
         whipImage.dropTarget = petSelectedImage
         foodImage.dropTarget = petSelectedImage
@@ -242,9 +242,9 @@ class GameViewController: UIViewController {
         foodImage.alpha = DIM_ALPHA
         foodImage.userInteractionEnabled = false
         
-        petSelectedImage.playDeathAnimation(forSelectedPet: petSelected)
+        petSelectedImage.playDeathAnimation(petSelected)
         
-        if petSelected == "miner" {
+        if petSelected == .Miner {
             sfxMinerDeath.play()
         } else {
             sfxRatDeath.play()

@@ -38,8 +38,8 @@ class ViewController: UIViewController {
             print(err.debugDescription)
         }
         
-        minerImage.playIdleAnimation(forSelectedPet: "miner")
-        ratImage.playIdleAnimation(forSelectedPet: "rat")
+        minerImage.playIdleAnimation(.Miner)
+        ratImage.playIdleAnimation(.Rat)
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,10 +50,10 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "selectMiner" {
             let gvc = segue.destinationViewController as! GameViewController
-            gvc.petSelected = "miner"
+            gvc.petSelected = .Miner
         } else if segue.identifier == "selectRat" {
             let gvc = segue.destinationViewController as! GameViewController
-            gvc.petSelected = "rat"
+            gvc.petSelected = .Rat
         }
     }
 

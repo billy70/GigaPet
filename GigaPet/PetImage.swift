@@ -9,6 +9,11 @@
 import Foundation
 import UIKit
 
+enum PetType {
+    case Miner
+    case Rat
+}
+
 class PetImage: UIImageView {
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -18,10 +23,15 @@ class PetImage: UIImageView {
         super.init(coder: aDecoder)
     }
     
-    func playIdleAnimation(forSelectedPet pet: String) {
+    func playIdleAnimation(selectedPet: PetType) {
+        var pet: String
         
+        switch selectedPet {
+        case .Miner: pet = "miner"
+        case .Rat: pet = "rat"
+        }
+
         let petNamePrefix = "\(pet)_idle_"
-        
         
         // Set a default image when the animation is stopped,
         // and reset the animation images array for the next animation loop.
@@ -42,13 +52,19 @@ class PetImage: UIImageView {
         self.startAnimating()
     }
     
-    func playDeathAnimation(forSelectedPet pet: String) {
+    func playDeathAnimation(selectedPet: PetType) {
+        var pet: String
+        
+        switch selectedPet {
+        case .Miner: pet = "miner"
+        case .Rat: pet = "rat"
+        }
         
         let petNamePrefix = "\(pet)_death_"
         var count = 4
         
         // The miner uses 5 death images, whereas the rat only has 4.
-        if pet == "miner" {
+        if selectedPet == .Miner {
             count = 5
 
             // Set a default image when the animation is stopped,
