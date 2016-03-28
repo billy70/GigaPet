@@ -20,15 +20,7 @@ class PetImage: UIImageView {
     
     func playIdleAnimation(forSelectedPet pet: String) {
         
-        var petNamePrefix = ""
-        
-        if pet == "miner" {
-            petNamePrefix = "miner"
-        } else {
-            petNamePrefix = "rat"
-        }
-        
-        petNamePrefix += "_idle_"
+        let petNamePrefix = "\(pet)_idle_"
         
         
         // Set a default image when the animation is stopped,
@@ -52,17 +44,26 @@ class PetImage: UIImageView {
     
     func playDeathAnimation(forSelectedPet pet: String) {
         
-        // Set a default image when the animation is stopped,
-        // and reset the animation images array for the next animation loop.
-        self.image = UIImage(named: "dead5.png")
+        let petNamePrefix = "\(pet)_death_"
+        var count = 4
         
-        // Reset the images for the next animation.
+        // The miner uses 5 death images, whereas the rat only has 4.
+        if pet == "miner" {
+            count = 5
+
+            // Set a default image when the animation is stopped,
+            // and reset the animation images array for the next animation loop.
+            self.image = UIImage(named: "\(petNamePrefix)5.png")
+        } else {
+            self.image = UIImage(named: "\(petNamePrefix)4.png")
+        }
+        
         self.animationImages = nil
         
         var imgArray = [UIImage]()
         
-        for x in 1...5 {
-            let img = UIImage(named: "dead\(x).png")
+        for x in 1...count {
+            let img = UIImage(named: "\(petNamePrefix)\(x).png")
             
             imgArray.append(img!)
         }
