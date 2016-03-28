@@ -521,8 +521,11 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="foodImage" destination="oF5-CF-djd" id="3za-Wq-xAW"/>
+                        <outlet property="heartImage" destination="IWe-M2-COf" id="xpH-Xh-m0j"/>
                         <outlet property="minerImage" destination="mxp-Ge-f3C" id="dFq-iC-UVJ"/>
                         <outlet property="ratImage" destination="rUS-6k-vwK" id="6xl-iE-Gp9"/>
+                        <outlet property="whipImage" destination="Y79-7r-5NV" id="cjv-Kv-VJU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kAG-fA-bfk" sceneMemberID="firstResponder"/>

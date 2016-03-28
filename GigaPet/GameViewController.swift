@@ -14,6 +14,11 @@ class GameViewController: UIViewController {
     @IBOutlet weak var minerImage: PetImage!
     @IBOutlet weak var ratImage: PetImage!
     
+    @IBOutlet weak var heartImage: DraggableImage!
+    @IBOutlet weak var whipImage: DraggableImage!
+    @IBOutlet weak var foodImage: DraggableImage!
+    
+    
     var sfxBite: AVAudioPlayer!
     var sfxHeart: AVAudioPlayer!
     var sfxWhip: AVAudioPlayer!
