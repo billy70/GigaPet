@@ -18,6 +18,10 @@ class GameViewController: UIViewController {
     @IBOutlet weak var whipImage: DraggableImage!
     @IBOutlet weak var foodImage: DraggableImage!
     
+    @IBOutlet weak var penalty1Image: UIImageView!
+    @IBOutlet weak var penalty2Image: UIImageView!
+    @IBOutlet weak var penalty3Image: UIImageView!
+    
     
     var sfxBite: AVAudioPlayer!
     var sfxHeart: AVAudioPlayer!
