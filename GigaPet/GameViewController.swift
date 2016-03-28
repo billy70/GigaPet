@@ -9,6 +9,10 @@
 import UIKit
 import AVFoundation
 
+let HEART_ITEM: UInt32 = 0
+let WHIP_ITEM: UInt32 = 1
+let FOOD_ITEM: UInt32 = 2
+
 class GameViewController: UIViewController {
 
     @IBOutlet weak var minerImage: PetImage!
@@ -22,13 +26,11 @@ class GameViewController: UIViewController {
     @IBOutlet weak var penalty2Image: UIImageView!
     @IBOutlet weak var penalty3Image: UIImageView!
     
+    @IBOutlet weak var restartButton: UIButton!
+    
     let DIM_ALPHA: CGFloat = 0.2
     let OPAQUE: CGFloat = 1.0
     let MAX_PENALTIES = 3
-    
-    let HEART_ITEM: UInt32 = 0
-    let WHIP_ITEM: UInt32 = 1
-    let FOOD_ITEM: UInt32 = 2
     
     var sfxBite: AVAudioPlayer!
     var sfxHeart: AVAudioPlayer!
@@ -42,7 +44,7 @@ class GameViewController: UIViewController {
     var penalties = 0
     var timer: NSTimer!
     var monsterHappy = false
-    var currentItem: UInt32 = 0
+    var currentItem: UInt32 = HEART_ITEM
 
 
     override func viewDidLoad() {
@@ -88,23 +90,20 @@ class GameViewController: UIViewController {
             }
         }
         
-        petSelectedImage.playIdleAnimation(petSelected)
         heartImage.dropTarget = petSelectedImage
         whipImage.dropTarget = petSelectedImage
         foodImage.dropTarget = petSelectedImage
 
         initializeGameState()
-
-        // Note here that "itemDroppedOnCharacter" is the method to be called, which accepts
-        // one parameter, and "onTargetDropped" is the name of the notification.
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(GameViewController.itemDroppedOnCharacter(_:)), name: DraggableImage.NOTIFICATION_POST_DROP_ID, object: nil)
-        
-        startTimer()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func restartButtonTapped(sender: AnyObject) {
+        initializeGameState()
     }
     
     func itemDroppedOnCharacter(someObj: AnyObject) {
@@ -179,11 +178,25 @@ class GameViewController: UIViewController {
     func initializeGameState() {
         print(#function)
         
+        penalties = 0
+        monsterHappy = false
+        petSelectedImage.playIdleAnimation(petSelected)
+        
         penalty1Image.alpha = DIM_ALPHA
         penalty2Image.alpha = DIM_ALPHA
         penalty3Image.alpha = DIM_ALPHA
-        getRandomItem()
+
+        currentItem = getRandomItem()
         updateItems()
+        
+        restartButton.enabled = false
+        restartButton.hidden = true
+        
+        // Note here that "itemDroppedOnCharacter" is the method to be called, which accepts
+        // one parameter, and "onTargetDropped" is the name of the notification.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(GameViewController.itemDroppedOnCharacter(_:)), name: DraggableImage.NOTIFICATION_POST_DROP_ID, object: nil)
+        
+        startTimer()
     }
     
     func changeGameState() {
@@ -249,6 +262,9 @@ class GameViewController: UIViewController {
         } else {
             sfxRatDeath.play()
         }
+        
+        restartButton.hidden = false
+        restartButton.enabled = true
     }
 }
 

@@ -205,6 +205,16 @@
                                     <constraint firstAttribute="height" constant="75" id="kb2-3I-Uoe"/>
                                 </constraints>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADn-qL-Vtz">
+                                <rect key="frame" x="237" y="270" width="126" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartButtonTapped:" destination="bxp-w9-N14" eventType="touchUpInside" id="pAz-lo-U28"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" tag="200" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rat_idle_1" translatesAutoresizingMaskIntoConstraints="NO" id="rUS-6k-vwK" customClass="PetImage" customModule="GigaPet" customModuleProvider="target">
                                 <rect key="frame" x="160" y="406" width="240" height="128"/>
                                 <constraints>
@@ -320,13 +330,13 @@
                                 <rect key="frame" x="200" y="185" width="200" height="80"/>
                                 <subviews>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="IWe-M2-COf" customClass="DraggableImage" customModule="GigaPet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="54" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="80"/>
                                     </imageView>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whip" translatesAutoresizingMaskIntoConstraints="NO" id="Y79-7r-5NV" customClass="DraggableImage" customModule="GigaPet" customModuleProvider="target">
-                                        <rect key="frame" x="74" y="0.0" width="53" height="80"/>
+                                        <rect key="frame" x="73" y="0.0" width="53" height="80"/>
                                     </imageView>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="oF5-CF-djd" customClass="DraggableImage" customModule="GigaPet" customModuleProvider="target">
-                                        <rect key="frame" x="147" y="0.0" width="54" height="80"/>
+                                        <rect key="frame" x="146" y="0.0" width="53.5" height="80"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -396,6 +406,7 @@
                             <constraint firstItem="c9n-91-tSf" firstAttribute="leading" secondItem="BmE-ey-ffG" secondAttribute="leading" id="cfT-YR-nGe"/>
                             <constraint firstItem="o7X-fg-tmE" firstAttribute="top" secondItem="pao-Uv-FFT" secondAttribute="bottom" constant="71" id="ch7-8w-wx2"/>
                             <constraint firstItem="RHq-Wx-d11" firstAttribute="top" secondItem="pao-Uv-FFT" secondAttribute="bottom" constant="59" id="dLU-0F-Ho2"/>
+                            <constraint firstItem="ADn-qL-Vtz" firstAttribute="centerX" secondItem="BmE-ey-ffG" secondAttribute="centerX" id="dkg-N4-7R8"/>
                             <constraint firstItem="o7X-fg-tmE" firstAttribute="top" secondItem="pao-Uv-FFT" secondAttribute="bottom" constant="59" id="gT4-yL-Aud"/>
                             <constraint firstItem="EHZ-Bh-1Q7" firstAttribute="top" secondItem="irR-gI-lDb" secondAttribute="top" id="gfe-St-Qlo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="N82-FS-iis" secondAttribute="trailing" constant="-20" id="hOO-PD-sjI"/>
@@ -418,6 +429,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="47"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                             </constraint>
+                            <constraint firstItem="ADn-qL-Vtz" firstAttribute="centerY" secondItem="BmE-ey-ffG" secondAttribute="centerY" id="qVU-Ys-w4z"/>
                             <constraint firstItem="rUS-6k-vwK" firstAttribute="centerX" secondItem="BmE-ey-ffG" secondAttribute="centerX" constant="-20" id="s10-Uz-xXY"/>
                             <constraint firstItem="mxp-Ge-f3C" firstAttribute="centerX" secondItem="BmE-ey-ffG" secondAttribute="centerX" constant="40" id="uJ2-ga-BIX">
                                 <variation key="heightClass=regular-widthClass=compact" constant="19"/>
@@ -440,38 +452,38 @@
                                 <exclude reference="CYH-xK-I69"/>
                                 <exclude reference="P8T-Gg-AOV"/>
                                 <exclude reference="op0-cd-JAb"/>
-                                <exclude reference="1Qo-Z9-aqa"/>
-                                <exclude reference="9LI-mA-OmU"/>
-                                <exclude reference="LGw-te-39g"/>
-                                <exclude reference="NEk-WS-lib"/>
-                                <exclude reference="Ypy-b2-px2"/>
-                                <exclude reference="dLU-0F-Ho2"/>
-                                <exclude reference="m9d-Wz-tGp"/>
-                                <exclude reference="Chs-Vr-gye"/>
-                                <exclude reference="RFl-4V-Yl2"/>
-                                <exclude reference="gT4-yL-Aud"/>
-                                <exclude reference="nfF-NU-RTg"/>
-                                <exclude reference="2rH-yp-EA2"/>
-                                <exclude reference="ZTZ-gf-ACC"/>
                                 <exclude reference="0Yn-4p-LmU"/>
                                 <exclude reference="CWo-Og-8Km"/>
                                 <exclude reference="gfe-St-Qlo"/>
                                 <exclude reference="ygl-UU-d3R"/>
+                                <exclude reference="NEk-WS-lib"/>
+                                <exclude reference="Ypy-b2-px2"/>
+                                <exclude reference="dLU-0F-Ho2"/>
+                                <exclude reference="m9d-Wz-tGp"/>
+                                <exclude reference="9LI-mA-OmU"/>
+                                <exclude reference="LGw-te-39g"/>
+                                <exclude reference="Chs-Vr-gye"/>
+                                <exclude reference="RFl-4V-Yl2"/>
+                                <exclude reference="gT4-yL-Aud"/>
+                                <exclude reference="nfF-NU-RTg"/>
+                                <exclude reference="1Qo-Z9-aqa"/>
+                                <exclude reference="2rH-yp-EA2"/>
+                                <exclude reference="ZTZ-gf-ACC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
                                 <include reference="op0-cd-JAb"/>
-                                <include reference="NEk-WS-lib"/>
-                                <exclude reference="Ypy-b2-px2"/>
-                                <include reference="Chs-Vr-gye"/>
-                                <exclude reference="RFl-4V-Yl2"/>
                                 <exclude reference="0Yn-4p-LmU"/>
                                 <exclude reference="CWo-Og-8Km"/>
                                 <exclude reference="Cfx-ec-v4T"/>
                                 <exclude reference="YQg-b1-VsT"/>
                                 <include reference="gfe-St-Qlo"/>
                                 <include reference="ygl-UU-d3R"/>
+                                <include reference="NEk-WS-lib"/>
+                                <exclude reference="Ypy-b2-px2"/>
+                                <include reference="Chs-Vr-gye"/>
+                                <exclude reference="RFl-4V-Yl2"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
@@ -483,8 +495,8 @@
                         <variation key="heightClass=compact-widthClass=compact">
                             <mask key="constraints">
                                 <exclude reference="aji-VG-T9b"/>
-                                <include reference="LGw-te-39g"/>
                                 <exclude reference="Kvj-vC-MYs"/>
+                                <include reference="LGw-te-39g"/>
                                 <exclude reference="ch7-8w-wx2"/>
                                 <include reference="2rH-yp-EA2"/>
                             </mask>
@@ -528,6 +540,7 @@
                         <outlet property="penalty2Image" destination="RHq-Wx-d11" id="6yJ-Pd-4Q7"/>
                         <outlet property="penalty3Image" destination="o7X-fg-tmE" id="3vw-7N-mYg"/>
                         <outlet property="ratImage" destination="rUS-6k-vwK" id="6xl-iE-Gp9"/>
+                        <outlet property="restartButton" destination="ADn-qL-Vtz" id="laT-qU-leT"/>
                         <outlet property="whipImage" destination="Y79-7r-5NV" id="cjv-Kv-VJU"/>
                     </connections>
                 </viewController>
