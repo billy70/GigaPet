@@ -40,7 +40,12 @@ class DraggableImage: UIImageView {
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if let touch = touches.first, let target = dropTarget {
-            let position = touch.locationInView(self.superview)
+            
+            // Need to use self.superview?.superview since the heart, whip,
+            // and food are contained within a stack view (i.e., the items'
+            // superview is the stack view, so you need to go "up" one
+            // more level/superview).
+            let position = touch.locationInView(self.superview?.superview)
             
             if CGRectContainsPoint(target.frame, position) {
                 // If the target of the "drop" is positioned on the dropTarget,
