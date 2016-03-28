@@ -12,6 +12,11 @@
 //      Author: CGEffex
 //      License: CC (Creative Commons) http://creativecommons.org/licenses/by/3.0/legalcode
 //
+// Credit/attribution for the image of the whip:
+//
+//      Link: http://maugh.deviantart.com/art/Weapon-Diagram-2-221200700
+//      Author: maugh
+//      License: CC (Creative Commons) http://creativecommons.org/licenses/by/3.0/legalcode
 
 import UIKit
 import AVFoundation

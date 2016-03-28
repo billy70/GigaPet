@@ -5,16 +5,33 @@
 //  Created by William L. Marr III on 3/25/16.
 //  Copyright © 2016 William L. Marr III. All rights reserved.
 //
+//
+// Credit/attribution for the audio file named whip_crack.wave:
+//
+//      Link: http://freesound.org/people/CGEffex/sounds/93100/
+//      Author: CGEffex
+//      License: CC (Creative Commons) http://creativecommons.org/licenses/by/3.0/legalcode
+//
+// Credit/attribution for the image of the whip:
+//
+//      Link: http://maugh.deviantart.com/art/Weapon-Diagram-2-221200700
+//      Author: maugh
+//      License: CC (Creative Commons) http://creativecommons.org/licenses/by/3.0/legalcode
 
 import UIKit
 import AVFoundation
+
+// MARK: - Global (file scope) constants
 
 let HEART_ITEM: UInt32 = 0
 let WHIP_ITEM: UInt32 = 1
 let FOOD_ITEM: UInt32 = 2
 
+
 class GameViewController: UIViewController {
 
+    // MARK: - Outlets
+    
     @IBOutlet weak var minerImage: PetImage!
     @IBOutlet weak var ratImage: PetImage!
     
@@ -27,6 +44,9 @@ class GameViewController: UIViewController {
     @IBOutlet weak var penalty3Image: UIImageView!
     
     @IBOutlet weak var restartButton: UIButton!
+    
+    
+    // MARK: - Properties
     
     let DIM_ALPHA: CGFloat = 0.2
     let OPAQUE: CGFloat = 1.0
@@ -47,6 +67,8 @@ class GameViewController: UIViewController {
     var currentItem: UInt32 = HEART_ITEM
 
 
+    // MARK: Overrides
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -129,6 +151,9 @@ class GameViewController: UIViewController {
             sfxBite.play()
         }
     }
+    
+    
+    // MARK: - Methods
     
     func getRandomItem() -> UInt32 {
         print(#function)
